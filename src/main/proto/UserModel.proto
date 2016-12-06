@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+option java_package = "club.lovety.rpc.model";
+option java_outer_classname = "User";
+
+message UserRequest{
+    string username =1;
+}
+
+message UserResponse{
+    int32 age=1;
+    string username=2;
+    string mobile=3;
+}

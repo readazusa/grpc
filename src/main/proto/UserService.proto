@@ -1,0 +1,12 @@
+syntax = "proto3";
+option java_multiple_files = true;
+option java_package = "club.lovety.rpc.service";
+option java_outer_classname = "UserService";
+option objc_class_prefix = "HLW";
+import "UserModel.proto";
+
+service LoadUser{
+    rpc load(UserRequest) returns(UserResponse) {};
+}
+
+
